@@ -26,7 +26,7 @@ class Conn{
 	void report();
 };
 
-Conn::Conn(int p = 51){
+Conn::Conn(int p = 79){
 	this->port = p;
 	this->sock = socket(AF_INET, SOCK_STREAM, 0);
 	if(this->sock < 0){
