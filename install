@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+g++ -o hackbuster prog.cpp;
+sudo cp ./hackbuster /usr/bin/;
+sudo chmod 755 /usr/bin/hackbuster;
+sudo touch /etc/network/if-up.d/hackbuster;
+sudo chmod 777 /etc/network/if-up.d/hackbuster;
+sudo echo '#!/usr/bin/env bash
+sudo ./usr/bin/hackbuster &
+exit 0;' > /etc/network/if-up.d/hackbuster;
+sudo chmod 755 /etc/network/if-up.d/hackbuster;
+echo "Done";
