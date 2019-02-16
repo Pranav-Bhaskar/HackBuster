@@ -21,11 +21,11 @@ In case you dont have git-cli:
   
 Clone the repo :
   
-`git clone https://github.com/Pranav-Bhaskar/LogMeIn.git`
+`git clone https://github.com/Pranav-Bhaskar/HackBuster.git`
   
 Open the directory :
   
-`cd LogMeIn`
+`cd HackBuster`
   
 Give Permitions:
   
